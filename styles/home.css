@@ -1,0 +1,6 @@
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%; /* a soma das colunas devem ser de 100% */
+    grid-template-rows: 11.4rem 1fr; /* '1fr' significa qu o valor restante é uma fração, ou seja, totalizando duas partes */
+    
+}

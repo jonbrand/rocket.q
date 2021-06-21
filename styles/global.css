@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* cores */
+    --dark-blue: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons: #A5B0C1;
+
+    --dark-grey: #4D5E77;
+    --blue-grey: #A1B2CD;
+    --medium-grey: #D3D9E2;
+    --light-grey: #E5EAF1;
+
+    /* 1rem = 16px (User Agent = css padrão no navegador) por padrão */
+    font-size: 62.5% /* 10px */
+}
+
+body {
+    height: 100vh; /* 'view height' significa a altura da tela total | 'view width' significa a largura da tela total */
+    background: var(--background);
+}
+
+body, button, input, textarea {
+    /* 'clamp' é o intervalo de tamanho de fonte, do minimo, padrão e o máximo */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* oculta o label */
+.sr-only {
+    position: absolute; /* a posição do item sobrepõe tudo */
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px; /* para colocar o texto para cima */
+    overflow: hidden; /* para não ter barra de rolagem */
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
