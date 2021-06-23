@@ -7,7 +7,7 @@
 }
 
 html {
-    /* CORES */
+    /* Cores */
     --dark-blue: #0D114F;
     --white: #FAFAFA;
     --red: #E83F5B;
@@ -19,7 +19,7 @@ html {
 
     --dark-grey: #4D5E77;
     --blue-grey: #A1B2CD;
-    --medium-grey: #D3D9E2;
+    --medium-grey: #EAECF2;
     --light-grey: #E5EAF1;
 
     /* 1rem = 16px (User Agent = css padrão no navegador) por padrão */
@@ -58,7 +58,7 @@ body, button, input, textarea {
     border-width: 0;
 }
 
-/* INPUT AND BUTTONS */
+/* Input and Buttons */
 input, button, .button {
     border-radius: 0.8rem;
     height: 5rem;
@@ -97,6 +97,20 @@ button.outlined,
     color: var(--blue);
     border: 0.2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey {
+    background: var(--light-grey);
+    color: var(--dark-grey);
+}
+
+/* Header */
 
 .content header {
     width: 80%;
