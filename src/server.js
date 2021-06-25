@@ -13,6 +13,9 @@ server.use(express.static("public"));
 // seta o caminho para a pasta views
 server.set('views', path.join(__dirname, 'views'));
 
+// middleware que decodifica o conteúdo passado
+server.use(express.urlencoded({extended: true}));
+
 server.use(route);
 
 server.listen(3000, () => console.log("Servidor farmando!🚂"));

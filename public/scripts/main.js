@@ -33,12 +33,12 @@ function handleClick(event, check = true) {
     // define qual ação está ativa
     const slug = check ? "check" : "delete";
     // seleciona a váriavel dentro da rota
-    const roomId = document.querySelector(".modal form");
+    const roomId = document.querySelector("#room-id").dataset.id;
     const questionId = event.target.dataset.id;
 
-
+    const form = document.querySelector(".modal form");
     // variáveis dentro do formulário
-    FormData.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
+    form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
 
     modalTitle.innerHTML=  `${text} esta pergunta`;
 
