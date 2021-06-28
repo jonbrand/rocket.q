@@ -95,3 +95,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
 
 ---
+
+<p align="center">
+  <img alt="Keep Coding" src=".github/keepcoding.png" width="60%">
+</p>
